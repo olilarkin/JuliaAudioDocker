@@ -27,6 +27,6 @@ RUN julia -e 'import Pkg; Pkg.update()' && \
     julia -e 'import Pkg; Pkg.add("Colors"); using Colors' && \
     julia -e 'import Pkg; Pkg.add("Images"); using Images' && \
     julia -e 'import Pkg; Pkg.add("SpecialFunctions"); using SpecialFunctions' && \
-#     julia -e 'using WebIO; WebIO.install_jupyter_nbextension()' && \
-    julia -e 'using WebIO; WebIO.install_jupyter_labextension()' && \
+     julia -e 'using WebIO; WebIO.install_jupyter_nbextension()' && \
+#    julia -e 'using WebIO; WebIO.install_jupyter_labextension()' && \
     fix-permissions /home/$NB_USER
